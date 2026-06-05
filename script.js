@@ -1,21 +1,27 @@
-function calcular(operacao) {
-  let numero1 = Number(document.getElementById("numero1").value);
-  let numero2 = Number(document.getElementById("numero2").value);
-  let resultado = 0;
+function adicionar(valor) {
+  document.getElementById("display").value += valor;
+}
 
-  if (operacao === "+") {
-    resultado = numero1 + numero2;
-  } else if (operacao === "-") {
-    resultado = numero1 - numero2;
-  } else if (operacao === "*") {
-    resultado = numero1 * numero2;
-  } else if (operacao === "/") {
-    if (numero2 === 0) {
-      resultado = "Não é possível dividir por zero";
-    } else {
-      resultado = numero1 / numero2;
-    }
+function limpar() {
+  document.getElementById("display").value = "";
+}
+
+function apagar() {
+  let display = document.getElementById("display");
+  display.value = display.value.slice(0, -1);
+}
+
+function calcular() {
+  let conta = document.getElementById("display").value;
+
+  if (conta === "") {
+    return;
   }
 
-  document.getElementById("resultado").textContent = resultado;
+  try {
+    let resultado = eval(conta);
+    document.getElementById("display").value = resultado;
+  } catch {
+    document.getElementById("display").value = "Erro";
+  }
 }

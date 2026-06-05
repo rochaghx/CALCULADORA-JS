@@ -8,19 +8,32 @@
 <body>
 
   <div class="calculadora">
-    <h1>Calculadora</h1>
-
-    <input type="number" id="numero1" placeholder="Digite o primeiro número">
-    <input type="number" id="numero2" placeholder="Digite o segundo número">
+    <input type="text" id="display" readonly placeholder="0">
 
     <div class="botoes">
-      <button onclick="calcular('+')">Somar</button>
-      <button onclick="calcular('-')">Subtrair</button>
-      <button onclick="calcular('*')">Multiplicar</button>
-      <button onclick="calcular('/')">Dividir</button>
-    </div>
+      <button onclick="limpar()">C</button>
+      <button onclick="adicionar('/')">÷</button>
+      <button onclick="adicionar('*')">×</button>
+      <button onclick="apagar()">⌫</button>
 
-    <h2>Resultado: <span id="resultado">0</span></h2>
+      <button onclick="adicionar('7')">7</button>
+      <button onclick="adicionar('8')">8</button>
+      <button onclick="adicionar('9')">9</button>
+      <button onclick="adicionar('-')">−</button>
+
+      <button onclick="adicionar('4')">4</button>
+      <button onclick="adicionar('5')">5</button>
+      <button onclick="adicionar('6')">6</button>
+      <button onclick="adicionar('+')">+</button>
+
+      <button onclick="adicionar('1')">1</button>
+      <button onclick="adicionar('2')">2</button>
+      <button onclick="adicionar('3')">3</button>
+      <button class="igual" onclick="calcular()">=</button>
+
+      <button class="zero" onclick="adicionar('0')">0</button>
+      <button onclick="adicionar('.')">.</button>
+    </div>
   </div>
 
   <script src="script.js"></script>

@@ -1,40 +1,71 @@
 # Calculadora com HTML, CSS e JavaScript
 
-Este projeto é uma calculadora simples desenvolvida com HTML, CSS e JavaScript.
+Este projeto consiste em uma calculadora desenvolvida utilizando HTML, CSS e JavaScript.
+
+A aplicação permite realizar operações matemáticas básicas por meio de uma interface gráfica semelhante a uma calculadora tradicional.
 
 ## Funcionalidades
 
-A calculadora realiza as seguintes operações:
+- Soma (+)
+- Subtração (-)
+- Multiplicação (×)
+- Divisão (÷)
+- Limpar tela (C)
+- Apagar último caractere (⌫)
 
-- Soma
-- Subtração
-- Multiplicação
-- Divisão
+## Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
 
 ## Como foi feita
 
-O HTML foi usado para criar a estrutura da página, com dois campos para digitar os números, botões para escolher a operação e uma área para mostrar o resultado.
+### HTML
 
-O CSS foi usado para estilizar a calculadora, deixando o conteúdo centralizado, com fundo claro, bordas arredondadas e botões organizados.
+O HTML foi utilizado para estruturar a calculadora, criando o visor e os botões numéricos e de operações.
 
-O JavaScript foi usado para adicionar a interatividade. Foi criada a função `calcular()`, que pega os valores digitados pelo usuário usando `document.getElementById()`, transforma os valores em número com `Number()` e executa a operação escolhida.
+### CSS
 
-Também foi feita uma verificação para impedir divisão por zero.
+O CSS foi utilizado para estilizar a interface, aplicando:
+
+- Layout centralizado
+- Fundo com gradiente
+- Botões personalizados
+- Efeitos visuais (hover)
+- Responsividade básica
+
+### JavaScript
+
+O JavaScript foi utilizado para:
+
+- Capturar os cliques dos botões
+- Exibir números e operações no visor
+- Realizar os cálculos matemáticos
+- Limpar o visor
+- Apagar caracteres digitados
+
+As operações são realizadas utilizando os operadores aritméticos apresentados na Aula 06:
+
+- +
+- -
+- *
+- /
 
 ## Prints da aplicação
 
 ### Soma
 
-Adicione aqui o print da operação de soma.
+![alt text](Soma.png)
 
 ### Subtração
 
-Adicione aqui o print da operação de subtração.
+![alt text](Subtração.png)
 
 ### Multiplicação
 
-Adicione aqui o print da operação de multiplicação.
+![alt text](Multiplicação.png)
 
 ### Divisão
 
-Adicione aqui o print da operação de divisão.
+![alt text](Divisão.png) 
