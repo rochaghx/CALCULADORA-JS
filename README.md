@@ -55,17 +55,13 @@ As operações são realizadas utilizando os operadores aritméticos apresentado
 ## Prints da aplicação
 
 ### Soma
-
-![alt text](Soma.png)
+ ![alt text](image.png)
 
 ### Subtração
-
-![alt text](Subtração.png)
+![alt text](image-1.png)
 
 ### Multiplicação
-
-![alt text](Multiplicação.png)
+![alt text](image-2.png)
 
 ### Divisão
-
-![alt text](Divisão.png) 
+![alt text](image-3.png)
